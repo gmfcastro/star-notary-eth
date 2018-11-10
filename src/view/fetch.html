@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Star Notary</title>
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+
+        <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Star Notary</h1>
+
+            <div class="row">
+                <label class="bold">Token ID:</label>
+                <label id="token-id"></label>
+                <input type="text" id="token-id-input">
+            </div>
+
+            <button id="fetch-button" onclick="fetchButtonClicked()">Fetch Star</button>
+            or
+            <a href="../../index.html">Claim Star</a>
+            <hr>
+            
+            <div class="row">
+                <label class="bold">Name:</label>
+                <label id="star-name-lbl"></label>
+            </div>
+
+            <div class="row">
+                <label class="bold">Story:</label>
+                <label id="star-story-lbl"></label>
+            </div>
+
+            <div class="row">
+                <label class="bold">RA:</label>
+                <label id="star-ra-lbl"></label>
+            </div>
+
+            <div class="row">
+                <label class="bold">MAG:</label>
+                <label id="star-mag-lbl"></label>
+            </div>
+
+            <div class="row">
+                <label class="bold">DEC:</label>
+                <label id="star-dec-lbl"></label>
+            </div>
+
+            <div class="row">
+                <label class="bold">CENT:</label>
+                <label id="star-cent-lbl"></label>
+            </div>
+        </div>
+
+        <script src="../js/star.notary.view.controller.js"></script>
+    </body>
+</html>

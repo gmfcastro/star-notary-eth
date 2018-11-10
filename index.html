@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Star Notary</title>
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+
+        <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Star Notary</h1>
+
+            <div class="row">
+                <label class="bold">Star Name:</label>
+                <label id="star-name"></label>
+                <input type="text" id="star-name-input">
+            </div>
+
+            <div class="row">
+                <label class="bold">Star Story:</label>
+                <label id="star-name"></label>
+                <input type="text" id="star-story-input">
+            </div>
+
+            <div class="row">
+                <label class="bold">Star RA:</label>
+                <label id="star-ra"></label>
+                <input type="text" id="star-ra-input">
+            </div>
+
+            <div class="row">
+                <label class="bold">Star Dec:</label>
+                <label id="star-dec"></label>
+                <input type="text" id="star-dec-input">
+            </div>
+
+            <div class="row">
+                <label class="bold">Star Mag:</label>
+                <label id="star-mag"></label>
+                <input type="text" id="star-mag-input">
+            </div>
+
+            <div class="row">
+                <label class="bold">Star Cent:</label>
+                <label id="star-cent"></label>
+                <input type="text" id="star-cent-input">
+            </div>
+
+            <div class="row">
+                <label class="bold">Token ID:</label>
+                <label id="token-id"></label>
+                <input type="text" id="token-id-input">
+            </div>
+
+            <button id="claim-button" onclick="claimButtonClicked()">Claim Star</button>
+            or
+            <a href="src/view/fetch.html">Fetch Star</a>
+        </div>
+
+        <script src="src/js/star.notary.view.controller.js"></script>
+    </body>
+</html>
